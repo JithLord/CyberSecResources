@@ -14,5 +14,12 @@ List of tools/resources for Cybersecurity
 - Spiders & Path Traversal
 -   
 
+## Privilege Escalation
+### Linux
+- LinPeas https://github.com/peass-ng/PEASS-ng
+### Windows
+- BeRoot.exe
+- WinPeas https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS
+
 
 - 
