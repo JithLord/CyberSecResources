@@ -11,8 +11,9 @@ List of tools/resources for Cybersecurity
   - uniscan
   - 
 
-- Spiders & Path Traversal
--   
+### Spiders & Path Traversal
+- OWASP ZAP
+- Burpsuite
 
 ## Privilege Escalation
 ### Linux
@@ -22,4 +23,9 @@ List of tools/resources for Cybersecurity
 - WinPeas https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS
 
 
-- 
+## Enumerate OS
+- nmap
+- enum4linux
+
+## Find Exploit-db Exploits commands line
+- searchsploit
