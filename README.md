@@ -18,6 +18,9 @@ List of tools/resources for Cybersecurity
 ## Privilege Escalation
 ### Linux
 - LinPeas https://github.com/peass-ng/PEASS-ng
+- DirtyCow https://github.com/firefart/dirtycow // https://github.com/firefart/dirtycow/blob/master/dirty.c
+- 
+  
 ### Windows
 - BeRoot.exe
 - WinPeas https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS
