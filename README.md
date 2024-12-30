@@ -49,6 +49,19 @@ List of tools/resources for Cybersecurity
 
 ##### Packing/Obfuscation
 - PEid (Find must common crypters, compilers and packer)
+- DIE (Detect it Easy for ELF Malware)
+
+##### Portable Executable information
+- PE Explorer (EXE, ActiveX, DLL)
+
+##### Identifying File Dependency
+- Dependency Walker
+- Virus Total
+
+##### Malware Disassembly 
+- IDA Pro
+- Ghidra
+- OllyDbg
 
 ### Malware Analysis Online
 - https://hybrid-analysis.com/
