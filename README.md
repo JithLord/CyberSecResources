@@ -19,7 +19,7 @@ List of tools/resources for Cybersecurity
 ### Linux
 - LinPeas https://github.com/peass-ng/PEASS-ng
 - DirtyCow https://github.com/firefart/dirtycow // https://github.com/firefart/dirtycow/blob/master/dirty.c
-- 
+- linux-exploit-suggester
   
 ### Windows
 - BeRoot.exe
