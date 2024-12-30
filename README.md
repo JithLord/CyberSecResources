@@ -35,9 +35,20 @@ List of tools/resources for Cybersecurity
 
 ## Malware Analysis
 ### Offline Malware Analysis
-#### Static
-##### File Fingerprinting
 
+#### Static
+
+##### File Fingerprinting
+- MD5/SHA2 Message Digest 
+
+##### String Search
+- PE Studio
+- FLOSS (Fire Eye) 
+- Strings (Microsoft) 
+- BinText
+
+##### Packing/Obfuscation
+- PEid (Find must common crypters, compilers and packer)
 
 ### Malware Analysis Online
 - https://hybrid-analysis.com/
