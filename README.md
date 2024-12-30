@@ -33,7 +33,13 @@ List of tools/resources for Cybersecurity
 ## Find Exploit-db Exploits commands line
 - searchsploit
 
-## A list of malware stuff
+## Malware Analysis
+### Offline Malware Analysis
+#### Static
+##### File Fingerprinting
+
+
+### Malware Analysis Online
 - https://hybrid-analysis.com/
 - https://www.virustotal.com/
 - https://whois.domaintools.com
