@@ -32,3 +32,23 @@ List of tools/resources for Cybersecurity
 
 ## Find Exploit-db Exploits commands line
 - searchsploit
+
+## A list of malware stuff
+- https://hybrid-analysis.com/
+- https://www.virustotal.com/
+https://www.hybrid-analysis.com/ Online Sandbox to check Malware and its affects
+https://whois.domaintools.com
+https://toolbar.netcraft.com/site_report?url
+https://www.robtex.com
+knockpy To discover subdomains
+
+No Distribution of results
+https://nodistribute.com/ # Preferred
+https://antiscan.me/
+https://www.virscan.org/language/en/ # Not tested
+https://spyralscanner.net/
+
+### Additional
+Cuckoo sandbox
+Virusshare.com
+Malware traffic analysis
