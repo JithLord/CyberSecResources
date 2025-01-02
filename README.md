@@ -24,6 +24,7 @@ List of tools/resources for Cybersecurity
 ### Windows
 - BeRoot.exe
 - WinPeas https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS
+- PowerUp.ps1
 
 
 ## Enumerate OS
