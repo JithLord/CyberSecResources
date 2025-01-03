@@ -82,3 +82,4 @@ No Distribution of results
 - Cuckoo sandbox
 - Virusshare.com
 - Malware traffic analysis
+- certutil.exe -urlcache -split -f "gttp://pstools.exe" pstools.exe
