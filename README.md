@@ -1,5 +1,7 @@
 # CyberSecResources
 List of tools/resources for Cybersecurity
+## Resources
+- https://github.com/khanhnnvn/CEHv10/blob/master/Labs/CEHv10%20Module%2006%20System%20Hacking.pdf
 
 ## Websites
 ### Web Scanner
