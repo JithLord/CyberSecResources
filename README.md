@@ -18,7 +18,7 @@ List of tools/resources for Cybersecurity
   - ```sqlmap -u "http://example.com/login.php" --data "username=admin&password=test" --dbs```
   - PHP Filter Chaining (https://github.com/synacktiv/php_filter_chain_generator/tree/main)
     - How to use? https://exploit-notes.hdks.org/exploit/web/security-risk/php-filters-chain/
-  - 
+  - sudo mount -t cifs //target-IP/cyberq /mnt/cyberq -o guest
 
 ### Spiders & Path Traversal
 - OWASP ZAP
