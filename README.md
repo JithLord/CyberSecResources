@@ -19,6 +19,8 @@ List of tools/resources for Cybersecurity
   - PHP Filter Chaining (https://github.com/synacktiv/php_filter_chain_generator/tree/main)
     - How to use? https://exploit-notes.hdks.org/exploit/web/security-risk/php-filters-chain/
   - sudo mount -t cifs //target-IP/cyberq /mnt/cyberq -o guest
+  - ```ldapsearch -x -h 10.10.10.25 -b "(objectclass=user)" | grep sAMAccountName```
+  - ```nmap --script ldap-rootdse 10.10.10.0/24```
 
 ### Spiders & Path Traversal
 - OWASP ZAP
