@@ -16,7 +16,8 @@ List of tools/resources for Cybersecurity
   - Wapiti (Lightweight scanner for GET/POST attack surfaces)
   - SQLmap (SQL Injection + Command execution within SQL)
   - XSStrike (XSS scanner with payload fuzzing)
-  - 
+
+### Important Commands
     - ``` ffuf -w /path/to/wordlist -u https://target/FUZZ ```
     - ``` ffuf -w /usr/share/wordlists/SecLists/Usernames/Names/names.txt -X POST -d "username=FUZZ&email=x&password=x&cpassword=x" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.134.222/customers/signup -mr "username already exists" ```
     - ``` ffuf -w valid_usernames.txt:W1,/usr/share/wordlists/SecLists/Passwords/Common-Credentials/10-million-password-list-top-100.txt:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.134.222/customers/login -fc 200 ```
@@ -56,15 +57,16 @@ List of tools/resources for Cybersecurity
 - WinPeas https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS
 - PowerUp.ps1
 
-Tool | Platform | Description
-winPEASx64.exe | Windows | Windows local enum (binary, no install)
-PowerUp.ps1 | Windows | PowerShell-based privilege checks
-Seatbelt | Windows | Targeted enumeration (token, policy, env)
-SharpUp | Windows | C# version of PowerUp
-AccessChk (Sysinternals) | Windows | Privilege and permissions checker
-Enum.exe | Windows | Legacy tool for shares, users, etc.
-net commands | Built-in | net user, net share, net localgroup etc.
-WMIC | Built-in | System config and user query tool
+| Tool | Platform | Description |
+-----------------------------
+| winPEASx64.exe | Windows | Windows local enum (binary, no install) |
+| PowerUp.ps1 | Windows | PowerShell-based privilege checks |
+| Seatbelt | Windows | Targeted enumeration (token, policy, env) |
+| SharpUp | Windows | C# version of PowerUp |
+| AccessChk (Sysinternals) | Windows | Privilege and permissions checker |
+| Enum.exe | Windows | Legacy tool for shares, users, etc. |
+| net commands | Built-in | net user, net share, net localgroup etc. |
+| WMIC | Built-in | System config and user query tool |
 
 ### Crack Passwords (Windows)
 - L0phtCrack 7 – GUI cracking suite
