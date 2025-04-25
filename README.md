@@ -12,6 +12,11 @@ List of tools/resources for Cybersecurity
   - nikto
   - uniscan
   - ffuf
+  - Arachni (Modular scanner with great CLI and web GUI)
+  - Wapiti (Lightweight scanner for GET/POST attack surfaces)
+  - SQLmap (SQL Injection + Command execution within SQL)
+  - XSStrike (XSS scanner with payload fuzzing)
+  - 
     - ``` ffuf -w /path/to/wordlist -u https://target/FUZZ ```
     - ``` ffuf -w /usr/share/wordlists/SecLists/Usernames/Names/names.txt -X POST -d "username=FUZZ&email=x&password=x&cpassword=x" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.134.222/customers/signup -mr "username already exists" ```
     - ``` ffuf -w valid_usernames.txt:W1,/usr/share/wordlists/SecLists/Passwords/Common-Credentials/10-million-password-list-top-100.txt:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.134.222/customers/login -fc 200 ```
@@ -21,8 +26,19 @@ List of tools/resources for Cybersecurity
   - sudo mount -t cifs //target-IP/cyberq /mnt/cyberq -o guest
   - ```ldapsearch -x -h 10.10.10.25 -b "(objectclass=user)" | grep sAMAccountName```
   - ```nmap --script ldap-rootdse 10.10.10.0/24```
+  - knockpy To discover subdomains
+
+### SSRF, RCE, XXE, LFI Helpers
+  - SSRFire – SSRF exploitation automation (Python)
+  - liffy – LFI to RCE using wrappers, filters, or logs
+  - Kiterunner – Advanced wordlist-based directory busting with support for Swagger/OpenAPI
+  - tplmap – Server-side template injection tool
 
 ### Spiders & Path Traversal
+- Feroxbuster
+- Dirsearch
+- FFUF
+- Dirb
 - OWASP ZAP
 - Burpsuite
 
@@ -40,12 +56,22 @@ List of tools/resources for Cybersecurity
 - WinPeas https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS
 - PowerUp.ps1
 
+Tool | Platform | Description
+winPEASx64.exe | Windows | Windows local enum (binary, no install)
+PowerUp.ps1 | Windows | PowerShell-based privilege checks
+Seatbelt | Windows | Targeted enumeration (token, policy, env)
+SharpUp | Windows | C# version of PowerUp
+AccessChk (Sysinternals) | Windows | Privilege and permissions checker
+Enum.exe | Windows | Legacy tool for shares, users, etc.
+net commands | Built-in | net user, net share, net localgroup etc.
+WMIC | Built-in | System config and user query tool
+
 ### Crack Passwords (Windows)
-- L0phtCrack7
-- Mimikatz
-- Crackmapexec
-- pwdump7
-- secretsdump.py
+- L0phtCrack 7 – GUI cracking suite
+- Mimikatz – Extracts credentials, SAM secrets, tickets
+- CrackMapExec – Swiss army knife for Active Directory
+- pwdump7 – Dump hashes from SAM
+- secretsdump.py (Impacket) – Extract NTLM hashes from SAM + SYSTEM
 
 ## Enumerate OS
 - nmap
@@ -65,6 +91,7 @@ List of tools/resources for Cybersecurity
 
 ##### String Search
 - PE Studio
+- DIE
 - FLOSS (Fire Eye) 
 - Strings (Microsoft) 
 - BinText
@@ -89,9 +116,8 @@ List of tools/resources for Cybersecurity
 - https://hybrid-analysis.com/
 - https://www.virustotal.com/
 - https://whois.domaintools.com
-https://toolbar.netcraft.com/site_report?url
+- https://toolbar.netcraft.com/site_report?url
 - https://www.robtex.com
-knockpy To discover subdomains
 
 No Distribution of results
 - https://nodistribute.com/ # Preferred
