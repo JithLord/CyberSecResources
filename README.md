@@ -58,7 +58,7 @@ List of tools/resources for Cybersecurity
 - PowerUp.ps1
 
 | Tool | Platform | Description |
------------------------------
+| --------- | --------- | ----------- |
 | winPEASx64.exe | Windows | Windows local enum (binary, no install) |
 | PowerUp.ps1 | Windows | PowerShell-based privilege checks |
 | Seatbelt | Windows | Targeted enumeration (token, policy, env) |
