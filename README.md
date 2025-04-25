@@ -40,10 +40,17 @@ List of tools/resources for Cybersecurity
 - WinPeas https://github.com/peass-ng/PEASS-ng/tree/master/winPEAS
 - PowerUp.ps1
 
+### Crack Passwords (Windows)
+- L0phtCrack7
+- Mimikatz
+- Crackmapexec
+- pwdump7
+- secretsdump.py
 
 ## Enumerate OS
 - nmap
 - enum4linux
+- uniscan
 
 ## Find Exploit-db Exploits commands line
 - searchsploit
