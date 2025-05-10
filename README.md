@@ -31,6 +31,7 @@ List of tools/resources for Cybersecurity
   - PHP Filter Chaining (https://github.com/synacktiv/php_filter_chain_generator/tree/main)
     - How to use? https://exploit-notes.hdks.org/exploit/web/security-risk/php-filters-chain/
   - sudo mount -t cifs //target-IP/cyberq /mnt/cyberq -o guest
+  - ```nxc smb 10.10.207.204 -u usernames.txt -p /usr/share/wordlists/rockyou.txt  --ignore-pw-decoding```
 
   - knockpy To discover subdomains
 
