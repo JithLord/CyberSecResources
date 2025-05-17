@@ -18,6 +18,7 @@ List of tools/resources for Cybersecurity
   - Wapiti (Lightweight scanner for GET/POST attack surfaces)
   - SQLmap (SQL Injection + Command execution within SQL)
   - XSStrike (XSS scanner with payload fuzzing)
+  - ```cat /usr/share/wordlists/rockyou.txt | grep -v "#" | grep -v "!" | grep -v "%" | grep -v "?" | grep -v "/" >> /usr/share/wordlists/rockyou3.txt```
 
 ### Important Commands
     - ``` ffuf -w /path/to/wordlist -u https://target/FUZZ ```
