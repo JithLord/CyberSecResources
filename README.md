@@ -19,6 +19,7 @@ List of tools/resources for Cybersecurity
   - SQLmap (SQL Injection + Command execution within SQL)
   - XSStrike (XSS scanner with payload fuzzing)
   - ```cat /usr/share/wordlists/rockyou.txt | grep -v "#" | grep -v "!" | grep -v "%" | grep -v "?" | grep -v "/" >> /usr/share/wordlists/rockyou3.txt```
+  - ```cadaver http://192.68.0.51/dav/```
 
 ### Important Commands
     - ``` ffuf -w /path/to/wordlist -u https://target/FUZZ ```
