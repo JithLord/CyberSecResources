@@ -17,7 +17,7 @@ List of tools/resources for Cybersecurity
   - Arachni (Modular scanner with great CLI and web GUI)
   - Wapiti (Lightweight scanner for GET/POST attack surfaces)
   - SQLmap (SQL Injection + Command execution within SQL)
-  - XSStrike (XSS scanner with payload fuzzing)
+  - XSStrike (XSS scanner with payload fuzzing) & KNOXSS
 
     
 ### Important Commands
